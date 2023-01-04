@@ -1,0 +1,27 @@
+--cpu Cortex-M4.fp
+"04-timer\startup_stm32f405xx.o"
+"04-timer\main.o"
+"04-timer\gpio.o"
+"04-timer\tim.o"
+"04-timer\stm32f4xx_it.o"
+"04-timer\stm32f4xx_hal_msp.o"
+"04-timer\stm32f4xx_hal_tim.o"
+"04-timer\stm32f4xx_hal_tim_ex.o"
+"04-timer\stm32f4xx_hal_rcc.o"
+"04-timer\stm32f4xx_hal_rcc_ex.o"
+"04-timer\stm32f4xx_hal_flash.o"
+"04-timer\stm32f4xx_hal_flash_ex.o"
+"04-timer\stm32f4xx_hal_flash_ramfunc.o"
+"04-timer\stm32f4xx_hal_gpio.o"
+"04-timer\stm32f4xx_hal_dma_ex.o"
+"04-timer\stm32f4xx_hal_dma.o"
+"04-timer\stm32f4xx_hal_pwr.o"
+"04-timer\stm32f4xx_hal_pwr_ex.o"
+"04-timer\stm32f4xx_hal_cortex.o"
+"04-timer\stm32f4xx_hal.o"
+"04-timer\stm32f4xx_hal_exti.o"
+"04-timer\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "04-Timer\04-Timer.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "04-Timer.map" -o 04-Timer\04-Timer.axf

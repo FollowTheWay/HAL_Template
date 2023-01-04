@@ -1,0 +1,26 @@
+--cpu Cortex-M4.fp
+"01-gpio-led\startup_stm32f405xx.o"
+"01-gpio-led\main.o"
+"01-gpio-led\gpio.o"
+"01-gpio-led\stm32f4xx_it.o"
+"01-gpio-led\stm32f4xx_hal_msp.o"
+"01-gpio-led\stm32f4xx_hal_tim.o"
+"01-gpio-led\stm32f4xx_hal_tim_ex.o"
+"01-gpio-led\stm32f4xx_hal_rcc.o"
+"01-gpio-led\stm32f4xx_hal_rcc_ex.o"
+"01-gpio-led\stm32f4xx_hal_flash.o"
+"01-gpio-led\stm32f4xx_hal_flash_ex.o"
+"01-gpio-led\stm32f4xx_hal_flash_ramfunc.o"
+"01-gpio-led\stm32f4xx_hal_gpio.o"
+"01-gpio-led\stm32f4xx_hal_dma_ex.o"
+"01-gpio-led\stm32f4xx_hal_dma.o"
+"01-gpio-led\stm32f4xx_hal_pwr.o"
+"01-gpio-led\stm32f4xx_hal_pwr_ex.o"
+"01-gpio-led\stm32f4xx_hal_cortex.o"
+"01-gpio-led\stm32f4xx_hal.o"
+"01-gpio-led\stm32f4xx_hal_exti.o"
+"01-gpio-led\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "01-GPIO-LED\01-GPIO-LED.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "01-GPIO-LED.map" -o 01-GPIO-LED\01-GPIO-LED.axf

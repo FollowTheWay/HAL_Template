@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp
+"05-pwm\startup_stm32f405xx.o"
+"05-pwm\main.o"
+"05-pwm\gpio.o"
+"05-pwm\tim.o"
+"05-pwm\stm32f4xx_it.o"
+"05-pwm\stm32f4xx_hal_msp.o"
+"05-pwm\stm32f4xx_hal_tim.o"
+"05-pwm\stm32f4xx_hal_tim_ex.o"
+"05-pwm\stm32f4xx_hal_rcc.o"
+"05-pwm\stm32f4xx_hal_rcc_ex.o"
+"05-pwm\stm32f4xx_hal_flash.o"
+"05-pwm\stm32f4xx_hal_flash_ex.o"
+"05-pwm\stm32f4xx_hal_flash_ramfunc.o"
+"05-pwm\stm32f4xx_hal_gpio.o"
+"05-pwm\stm32f4xx_hal_dma_ex.o"
+"05-pwm\stm32f4xx_hal_dma.o"
+"05-pwm\stm32f4xx_hal_pwr.o"
+"05-pwm\stm32f4xx_hal_pwr_ex.o"
+"05-pwm\stm32f4xx_hal_cortex.o"
+"05-pwm\stm32f4xx_hal.o"
+"05-pwm\stm32f4xx_hal_exti.o"
+"05-pwm\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "05-PWM\05-PWM.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "05-PWM.map" -o 05-PWM\05-PWM.axf
